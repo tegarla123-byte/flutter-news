@@ -35,9 +35,9 @@ Flutter app that displays news content from NewsAPI for Android and iOS.
 - Generate Retrofit and JSON code (needed after DTO/API changes):  
   `flutter pub run build_runner build --delete-conflicting-outputs`
 - Run the app per flavor:
-  - Dev: `flutter run -t lib/main_dev.dart`
-  - Staging: `flutter run -t lib/main_staging.dart`
-  - Prod: `flutter run -t lib/main_prod.dart`
+  - Dev: `flutter run --flavor dev -t lib/main_dev.dart`
+  - Staging: `flutter run --flavor staging -t lib/main_staging.dart`
+  - Prod: `flutter run --flavor prod -t lib/main_prod.dart`
 
 ## Running on emulator / simulator
 - Android

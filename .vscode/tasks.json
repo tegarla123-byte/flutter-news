@@ -1,0 +1,37 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Generate .env.dev",
+      "type": "shell",
+      "command": "cp assets/env/.env.dist assets/env/.env.dev",
+      "windows": {
+        "command": "powershell Copy-Item assets/env/.env.dist assets/env/.env.dev -Force"
+      }
+    },
+    {
+      "label": "Generate .env.staging",
+      "type": "shell",
+      "command": "cp assets/env/.env.dist assets/env/.env.staging",
+      "windows": {
+        "command": "powershell Copy-Item assets/env/.env.dist assets/env/.env.staging -Force"
+      }
+    },
+    {
+      "label": "Generate .env.prod",
+      "type": "shell",
+      "command": "cp assets/env/.env.dist assets/env/.env.prod",
+      "windows": {
+        "command": "powershell Copy-Item assets/env/.env.dist assets/env/.env.prod -Force"
+      }
+    },
+    {
+      "label": "Generate ALL .env (dev + staging + prod)",
+      "dependsOn": [
+        "Generate .env.dev",
+        "Generate .env.staging",
+        "Generate .env.prod"
+      ]
+    }
+  ]
+}
