@@ -267,6 +267,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_treemap:
+    dependency: "direct main"
+    description:
+      name: flutter_treemap
+      sha256: "6c99734c4535c1899edc095c6820742d7995992f7580c8cd032375994f6c1c59"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.0"
   flutter_web_plugins:
     dependency: transitive
     description: flutter
@@ -360,6 +368,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.11.3"
+  just_the_tooltip:
+    dependency: "direct main"
+    description:
+      name: just_the_tooltip
+      sha256: "7a081133d57285bfb41b331f411006d57b433d7b35772e6155745f6a7a09cb82"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.12"
   leak_tracker:
     dependency: transitive
     description:

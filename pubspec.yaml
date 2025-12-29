@@ -43,6 +43,8 @@ dependencies:
   go_router: ^17.0.1
   get_it: ^9.2.0
   shared_preferences: ^2.5.4
+  flutter_treemap: ^1.0.0
+  just_the_tooltip: ^0.0.12
 
 dependency_overrides:
   analyzer: 8.4.1
